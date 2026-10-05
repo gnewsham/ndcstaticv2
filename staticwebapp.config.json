@@ -1,0 +1,16 @@
+{
+  "routes": [
+    {
+      "route": "/*",
+      "rewrite": "/404.html",
+      "statusCode": 404
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/images/*", "/css/*", "/js/*", "/*.json", "/*.txt", "/*.xml"]
+  },
+  "mimeTypes": {
+    ".json": "text/json"
+  }
+}
